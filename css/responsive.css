@@ -1,0 +1,125 @@
+@media (min-width:320px) and (max-width:767px){
+	
+	.headerTop{ padding: 0; height: 72px;}
+	.logo{ opacity: 1; width: 110px; top: 10px; left:10px;}
+	.cta{ display: none; }
+	.btnMobileNav{ display: block; }
+	.other .navOuter, .home .navOuter{ padding: 0; }
+	.topNav li{ font-size: 14px !important; }
+	.topNav{ width: 260px; height: 100%; padding: 20px 0 0 0; background: #3c6d97; position: fixed;  top:0; text-align: left; right: -260px; overflow-y: auto;}
+	.other .topNav li, .home .topNav li{ display: block; margin:0; }
+	.other .topNav li a, .home .topNav li a{ border:0; padding: 10px 15px;}
+	.other .topNav li ul, .home .topNav li ul{ display: block; position: relative; top: auto; width: 100%; background: none;}
+	.other .topNav li ul li, .home .topNav li ul li{ font-size: 14px;}
+	.other .topNav li ul li a, .home .topNav li ul li a{ color: #bccbd9; padding: 10px 15px 10px 35px;}
+	.other .topNav li ul li a:hover, .home .topNav li ul li a:hover{ background: none; border:0;}
+	.topNav li ul li a:hover, .topNav li ul li a.activeMenu{ background:none;  border: 0; color: #fff; }
+	
+	.homeBannerBg{ margin:72px 0 0 0; }
+	.homeBanner{ padding: 50px 0; }
+	.homeBannerInner{ padding: 0 15px; }
+	.homeLogo{ max-width: 150px; }
+	.aniversary{ top: -38px; }
+	.aniversary span{ width: 75px;}
+	.atlantaSocialInner{ padding: 50px 15px 30px 15px; }
+	.atlantaSocialInner h3{ font-size: 20px; line-height: 28px; padding: 0 0 15px 0; }
+	.atlantaSocialInner p{ font-size: 16px; line-height: 24px; }
+	.whoWeAre{ padding: 30px 0; }
+	.whoWeAreInner{ padding: 0 15px; }
+	.whoWeAre h3{ font-size: 20px; padding: 0 0 20px 0; }
+	.whoweList li{ font-size: 12px; letter-spacing: normal; margin:0 5px 0 0; padding: 0 0 0 15px; }
+	.descList{ padding: 30px 0 0 0; }
+	.descList li{ font-size: 16px; padding: 12px 0; }
+	.benifitRow{ padding: 0; }
+	.benifits{ padding: 30px 0 10px 0; }
+	.benifitsInner{ padding: 0 15px; }
+	.benifitsInner h3{ font-size: 20px; padding: 0 0 30px 0; }
+	.benifitBox{ width: 100%; padding: 15px; margin:0 0 20px 0;}
+	.iconCont{ width: 70px; margin:0 15px 0 0; }
+	.contentCont h4{ font-size: 16px; line-height: 20px; padding: 5px 0 12px 0; }
+	.contentCont p{ min-height: auto; padding: 0 0 15px 0; }
+	.contentBox{ width: 100%; }
+	.contentBox img{ width: 100%; }
+	.contentBox.bg1{ padding: 20px; }
+	.contentBox.bg2{ padding: 20px; }
+	.contentBox h3{ font-size: 20px; line-height: 28px; padding: 0 0 15px 0;}
+	.contentBox p{ font-size: 16px; line-height: 24px; padding: 0 0 20px 0; }
+	.contentBox h4{ font-size: 16px; line-height: 24px; }
+	.contentBox.desktop{ display: none; }
+	.contentBox.mobile{ display: block; }
+
+	
+
+
+	.aboutBanner{ margin:72px 0 0 0; height: auto; padding: 40px 15px;}
+	.bannerInner{ top: auto; transform: none; -moz-transform: none; -webkit-transform: none; }
+	.bannerInner h2{ font-size: 32px; }
+	.aboutContent{ padding: 30px 15px 10px 15px; }
+	.aboutContent h3{ font-size: 20px; line-height: 26px; }
+	.aboutContent p{ font-size: 16px; line-height: 26px; }
+	.listing li{ padding: 15px 0; font-size: 14px; line-height: 22px;}
+	.statisticsList li{ font-size: 14px; }
+
+	.blogContent{ padding: 30px 15px; }
+	.blogRow h3{ font-size: 18px; line-height: 24px; }
+	.videoBox{ margin:0 0 20px 0; }
+	.addressBlock{ margin:0 0 20px 0; }
+	.blogRow p{ font-size: 14px; line-height: 22px; padding: 0 0 15px 0;}
+	.videoRow{ padding: 0; }
+	.addressRow{ padding: 0; }
+
+	.footer{ padding: 20px 15px; }
+	.footerTop{ display: none; }
+	.fooLeft{ width: 100%; text-align: center;}
+	.fooRight{ width: 100%; text-align: center; border-top: 1px #ddd solid; padding: 20px 0 0 0; margin:10px 0 0 0;}
+
+	#staffDesktop{ display: none; }
+	#staffMobile{ display: block; }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.headerTop{ padding: 0; height: 72px;}
+	.navOuter{ /*padding: 0 15px 20px 15px !important;*/ background: #3c6d97 !important; text-align: right;}
+	.nav li{ font-size: 14px !important; margin:0 0 0 15px !important; }
+	.cta{ right:0; transform: none; font-size: 12px; background: url(../images/mobile-icon.png) left center no-repeat;}
+	.cta a{ font-size: 15px;}
+	.logo{ opacity: 1; width: 110px; top: 10px; left: 10px;}
+	.homeBanner{ padding: 150px 15px; }
+	.atlantaSocial{ padding: 0 15px; }
+	.whoWeAre{ padding: 90px 15px; }
+	.benifits{ padding: 65px 15px; }
+	.iconCont{ width: 80px; }
+	.contentBox.bg1{ padding: 20px 15px; }
+	.contentBox h3{ font-size: 20px; line-height: 26px; padding: 0 0 15px 0; }
+	.contentBox p{ font-size: 16px; line-height: 22px; padding: 0 0 15px 0; }
+	.contentBox h4{ font-size: 14px; line-height: 18px; }
+	.contentBox.bg2{ padding: 20px 15px; }
+	.footerInner{ padding: 0 15px; }
+	.aboutBanner{ margin:72px 0 0 0; }
+	.aboutInner{ padding: 0 15px; }
+	.bannerInner{ padding: 0 15px; }
+	.staffList li{ margin: 0 14px; }
+	.ourStaffInner{ padding: 0 15px; }
+	.tabLeft{ margin:0 30px 0 0; }
+	
+
+	.cta{ display: none; }
+	.btnMobileNav{ display: block; }
+	.other .navOuter, .home .navOuter{ padding: 0; }
+	.topNav{ width: 260px; height: 100%; padding: 20px 0 0 0; background: #3c6d97; position: fixed;  top:0; text-align: left; right: -260px; overflow-y: auto;}
+	.other .topNav li, .home .topNav li{ display: block; margin:0; font-size: 14px !important;}
+	.other .topNav li a, .home .topNav li a{ border:0; padding: 10px 15px;}
+	.other .topNav li ul, .home .topNav li ul{ display: block; position: relative; top: auto; width: 100%; background: none;}
+	.other .topNav li ul li, .home .topNav li ul li{ font-size: 14px !important;}
+
+	.other .topNav li ul li a, .home .topNav li ul li a{ color: #bccbd9; padding: 10px 15px 10px 35px; background: none; border: 0;}
+	.other .topNav li ul li a:hover, .other .topNav li ul li a.activeMenu, .home .topNav li ul li a:hover, .home .topNav li ul li a.activeMenu{ background: none; border:0; color: #fff;}
+
+	.blogContent{ padding: 70px 15px; }
+}
+	
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+	
+}

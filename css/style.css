@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#ffffff; font-family:'ralewayregular', Arial; font-size:14px; color:#666666; overflow-x:hidden; line-height: normal;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+a:hover, a:focus{ text-decoration: none; border:0; outline: 0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:115px;}
+ul, li{ list-style-type:none; margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; margin: 0; padding: 0;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;}
+
+::-webkit-input-placeholder {color: #a8aaa7;}
+:-moz-placeholder { color: #a8aaa7; opacity: 1;}
+::-moz-placeholder { color: #a8aaa7; opacity:  1;}
+:-ms-input-placeholder { color: #a8aaa7;}
+:placeholder-shown { color: #a8aaa7;}
+
+
+
+
+/********* Font Face ****************/
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.eot');
+    src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black-webfont.eot');
+    src: url('../fonts/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-black-webfont.woff') format('woff'),
+         url('../fonts/raleway-black-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-black-webfont.svg#ralewayblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.eot');
+    src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff'),
+         url('../fonts/raleway-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/***
+Main CSS Rules
+***********/
+.wrapper{ max-width: 1140px; margin: 0 auto;}
+.header{ position: fixed; left:0; top: 0; width: 100%; z-index: 999; }
+.headerTopInner{ max-width: 1000px; margin:0 auto; position: relative; height: 64px;}
+.headerInner{ max-width: 1000px; margin:0 auto;}
+.logo{ width: auto; float: left; position: absolute; left:0; top: 14px; opacity: 0; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.headerTop{ background: #3c6d97; height: 64px; font-family: 'ralewayextrabold', Arial; transition: all 0.3s linear; position: relative;}
+.fixHeader .headerTop{ text-align: right; }
+.cta{ display: inline-block; font-size: 20px; color: #fff; background: url(../images/mobile-icon1.png) left center no-repeat; padding: 0 0 0 33px; position: absolute; right:50%; top: 14px; transform: translateX(50%); -moz-transform: translateX(50%); -webkit-transform: translateX(50%); transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.cta a{ font-size: 26px; color: #fff; display: inline-block; margin:0 0 0 10px;}
+.fixHeader .cta{ right:0; transform: none; font-size: 12px; background: url(../images/mobile-icon.png) left center no-repeat;}
+.fixHeader .cta a{ font-size: 15px;}
+.fixHeader .logo{ opacity: 1;}
+
+.navOuter{ padding: 40px 0 0 0; text-align: center; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.topNav{ font-size: 0; }
+.topNav li{ display: inline-block; font-family: 'ralewaybold', Arial; font-size: 16px; margin:0 15px; position: relative;}
+.topNav li a{ color: #bccbd9; display: block; border-bottom: 2px transparent solid; padding: 0 0 7px 0; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.topNav li a:hover, .topNav li a.activeNav{ color: #fff; border-bottom: 2px #5cc133 solid;}
+
+.topNav li ul{ width: 240px; background: #5cc133; position: absolute; left:0; top: 24px; display: none;}
+.topNav li ul li{ display: block; text-align: left; margin:0 !important; font-size: 14px;}
+.topNav li ul li a{ display: block; color: #fff; padding: 10px 10px 10px 15px; border-bottom: 1px #55b42e solid;}
+.topNav li ul li a:hover, .topNav li ul li a.activeMenu{ border-bottom: 1px #55b42e solid; background: #55b42e;}
+.topNav li:hover ul{ display: block; }
+
+
+.fixHeader .navOuter{ padding: 0 0 20px 0; background: #3c6d97; text-align: right;}
+.fixHeader .topNav li{ margin:0 0 0 30px; font-size: 14px;}
+
+.other .topNav li{ margin:0 0 0 30px; font-size: 14px;}
+.other .navOuter{ padding: 0 0 20px 0; background: #3c6d97; text-align: right;}
+.other .cta{ right:0; transform: none; font-size: 12px; background: url(../images/mobile-icon.png) left center no-repeat;}
+.other .cta a{ font-size: 15px;}
+.other .header{ position: fixed; left:0; top: 0; width: 100%; z-index: 999; }
+.other .logo{ opacity: 1;}
+
+
+.homeBannerBg{ background: url(../images/home-banner.jpg) top center no-repeat; background-size: cover; margin:64px 0 0 0;}
+.homeBanner{ padding:180px 0 140px 0;}
+.homeBannerInner{ max-width: 1000px; margin:0 auto; }
+
+.atlantaSocial{ background: #035ead url(../images/atlanta-social-bg.jpg) bottom center no-repeat;}
+.atlantaSocialInner{ max-width: 790px; margin:0 auto; position: relative;  padding: 90px 0; text-align: center;}
+.aniversary{ width: 100%; position: absolute; left: 0; top: -70px; text-align: center;}
+.aniversary span{ display: inline-block; margin:0 5px;}
+.atlantaSocialInner h3{ font-family: 'ralewayextrabold', Arial; font-size: 28px; line-height: 42px; color: #fff; text-transform: uppercase; letter-spacing: 4px; padding: 0 0 60px 0;}
+.atlantaSocialInner p{ font-family: 'source_sans_prolight', Arial; font-size: 18px; line-height: 30px; color: #fff;}
+
+.whoWeAre{ background: #fff; padding: 90px 0; text-align: center; }
+.whoWeAreInner{ max-width: 1000px; margin:0 auto; }
+.whoWeAre h3{ font-family: 'ralewayextrabold', Arial; font-size: 42px; color: #444561; letter-spacing: 4px; text-transform: uppercase; padding: 0 0 50px 0;}
+.whoweList li{ display: inline-block; font-family: 'ralewayextrabold', Arial; font-size: 19px; color: #636363; letter-spacing: 4px; text-transform: uppercase; background: url(../images/dot.png) left center no-repeat; padding: 0 0 0 27px; margin:0 10px; position: relative;}
+.whoweList li:first-child{ background: none;}
+.descList{ padding: 60px 0 0 0; }
+.descList li{ font-size: 18px; color: #6b6c79; background: url(../images/border.png) bottom center no-repeat; padding: 18px 0;}
+.descList li span{ display: inline-block; position: relative; transition: transform 0.3s linear; -moz-transition: transform 0.3s linear; -webkit-transition: transform 0.3s linear;}
+.descList li:last-child{ background: none;}
+.descList li:hover span{ transform: scale(1.1,1.1); -moz-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1); }
+
+
+.benifits{ padding: 65px 0; background: #f6f7f8; }
+.benifitsInner{ max-width: 1000px; margin:0 auto; }
+.benifitsInner h3{ font-family: 'ralewayextrabold', Arial; font-size: 28px; color: #5b5c5e; text-transform: uppercase; letter-spacing: 4px; padding: 0 0 55px 0; text-align: center;}
+
+.benifitRow{ padding: 0 0 25px 0; }
+.benifitBox{ width: 48.5%; background: #fff; padding: 25px; box-shadow: 0 0 5px #eee; -moz-box-shadow: 0 0 5px #eee; -webkit-box-shadow: 0 0 5px #eee; position: relative; transition: transform 0.2s linear; -moz-transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;}
+.benifitBox:hover{ transform: scale(1.05,1.05); -moz-transform: scale(1.05,1.05); -webkit-transform: scale(1.05,1.05); }
+.iconCont{ width: 107px; margin:0 26px 0 0; float: left; }
+.contentCont{ display: block; overflow: hidden; }
+.contentCont h4{ font-family: 'ralewaybold', Arial; color: #232323; font-size: 21px; line-height: 25px; padding: 5px 0 20px 0;}
+.contentCont p{ font-family: 'source_sans_prolight', Arial; font-size: 14px; line-height: 24px; color: #393939; min-height: 140px;}
+.contentCont a{ font-family: 'ralewaybold', Arial; font-size: 12px; color: #5cc133; text-transform: uppercase; letter-spacing: 2px;}
+
+.homeContent{}
+.homeContentInner{ max-width: 1140px; margin:0 auto; }
+.contentRow{}
+.contentBox{ width: 50%; float: left;}
+.contentBox img{ vertical-align: top;}
+.contentRow.bg1{ background:#025eb1;}
+.contentRow.bg2{ background:#02243d;}
+.contentBox h3{ font-family: 'ralewaybold', Arial; font-size: 28px; line-height: 32px; color: #fff; padding: 0 0 35px 0;}
+.contentBox p{ font-family: 'source_sans_prolight', Arial; font-size: 18px; line-height: 26px; color: #fff; padding: 0 0 30px 0;}
+.contentBox h4{ font-family: 'ralewaybold', Arial; font-size: 18px; line-height: 26px; color: #fff;}
+.contentBox.bg1{ padding: 35px 50px 0 120px;}
+.contentBox.bg2{ padding: 35px 120px 0 50px;}
+.contentBox.mobile{ display: none; }
+
+.btnMobileNav{ width: 57px; height: 72px; display: none; position: absolute; right: 0; top: 0;}
+
+
+/***
+About Us
+***/
+.aboutBanner{ height: 145px; background: url(../images/about-bg.jpg) top center no-repeat; background-size: cover; margin:109px 0 0 0;}
+.bannerInner{ position: relative; top: 50%; text-align: center; transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); max-width: 900px; margin:0 auto;}
+.bannerInner h2{ font-family: 'ralewaylight', Arial; font-size: 46px; color: #fff; position: relative;}
+.aboutContent{ background: #f6f8f9; padding: 70px 0; }
+.aboutContent p{ font-family: 'source_sans_prolight', Arial; font-size: 18px; line-height: 30px; color: #505050; padding: 0 0 30px 0;}
+.aboutContent p a{ color: #0967c7;}
+.aboutContent h3{ font-family: 'ralewaymedium', Arial; font-size: 38px; line-height: 48px; color: #295690; padding: 0 0 25px 0;}
+.aboutInner{ max-width: 1000px; margin:0 auto; text-align: center;}
+
+
+/***
+Our Staff
+***/
+.staffListOuter{ background: #fff; padding: 38px 0; }
+.staffListInner{ max-width: 1000px; margin:0 auto; }
+.staffList{ text-align: center; }
+.staffList li{ display: inline-block; margin:0 30px; max-width: 80px; vertical-align: top;}
+.staffList li a{ display: block;}
+.staffList li a .thumb{ display: block; width: 75px; height: 75px; background: #f0f0f0; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; overflow: hidden;}
+.staffList li a .thumb img{ position: relative; transition: all 0.3s linear; -moz-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;}
+.staffList li a .staffName{ display: block; font-family: 'ralewaysemibold', Arial; font-size: 13px; line-height: 16px; color: #a3a3a3; margin:5px 0 0 0;}
+.staffList li a:hover .staffName, .staffList li a.activeTab .staffName{ color: #000;}
+.staffList li a:hover .thumb img, .staffList li a.activeTab .thumb img{ top: -75px;}
+
+
+.ourStaffContent{ background: #f6f8f9; padding: 70px 0; }
+.ourStaffInner{ max-width: 1000px; margin:0 auto; }
+.tabLeft{ width: 165px; float: left; margin:0 60px; text-align: center;}
+.staffThumb{ width: 128px; height: 128px; display: inline-block; background: #ccc;  border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%; overflow: hidden;}
+.tabLeft h4{ font-family: 'ralewaybold', Arial; font-size: 18px; color: #505050; padding: 15px 0 0 0; }
+.tabLeft h5{ font-size: 16px; color: #505050; padding: 0 0 35px 0; }
+.tabLeft p{ font-size: 14px; color: #505050;}
+.tabRight{ display: block; overflow: hidden;}
+.tabRight p{ font-size: 16px; line-height: 32px; color: #0d0d0d; padding: 0 0 30px 0;}
+.tabRight p a{ color: #0967c7;}
+.tabContent{ display: none; }
+
+#staffMobile{ display: none; }
+.staffRowMobile{ padding: 30px 15px; }
+.mStaffRow{ border-bottom: 1px #ddd solid; padding: 10px 0; }
+.mStaff{ cursor: pointer; }
+.mThumb{ display: inline-block; width: 65px; height: 65px; background: #f0f0f0; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; overflow: hidden; float: left; margin:0 15px 0 0;}
+.mThumb img{ position: relative; transition: all 0.3s linear; -moz-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;}
+.mStaffName{ display: block; font-family: 'ralewaysemibold', Arial; font-size: 16px; color: #666666; height: 65px; overflow: hidden;}
+.mStaffName .mStaffNameInner{ position: relative; top: 50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+.mStaff:hover .mThumb img, .mStaff.activeAccord .mThumb img{ top: -65px;}
+
+.mStaffDesc{ padding: 0 15px 0 80px; display: none;}
+.mStaffDesc p{ font-size: 14px; line-height: 20px; padding: 0 0 15px 0;}
+
+/***
+Locations
+***/
+
+.map{ padding: 0 0 40px 0; }
+.addressRow{ text-align: center; }
+.addressBlock{ min-height: 260px; vertical-align: top;  background: #fff; box-shadow: 0 0 5px #eee; -moz-box-shadow: 0 0 5px #eee; -webkit-box-shadow: 0 0 5px #eee; margin:0 0 30px 0;}
+.addressBlock h4{ font-family: 'ralewaymedium', Arial; font-size: 18px; color: #295690; padding: 0 0 15px 0;}
+.addressBlock p{ line-height: 24px; padding: 0 0 20px 0;}
+.addrInner{ padding: 30px 0 0 0;}
+
+
+/***
+Statistics
+***/
+.statisticsList li{ margin:15px 0; font-size: 16px;}
+.statisticsList li a{ color: #0967c7; text-decoration: underline;}
+
+
+/***
+Videos
+***/
+.videoRow{ }
+.videoBox{ background: #fff; box-shadow: 0 0 10px #eee; -moz-box-shadow: 0 0 10px #eee; -webkit-box-shadow: 0 0 10px #eee; margin:0 0 30px 0;}
+.videoCont iframe{ vertical-align: top; }
+.videoBox h5{ font-size: 15px; line-height: 20px; padding: 10px; min-height: 80px;}
+
+/***
+Blog
+***/
+.blogContent{ background: #f6f8f9; padding: 70px 0; }
+.blogInner{ max-width: 1000px; margin:0 auto;}
+.blogRow{ padding: 30px 0 0 0; border-bottom:2px #ddd solid; }
+.blogRow:first-child{ padding: 0;}
+.blogRow:last-child{ border:0;}
+.blogRow h3{ font-size: 24px; line-height: 28px; color: #0967c7; padding: 0 0 10px 0; }
+.blogRow h4{ font-family: 'ralewaymedium', Arial; font-size: 16px;  color: #111; padding: 0 0 15px 0;}
+.blogRow h5{ font-family: 'ralewaymedium', Arial; font-size: 16px;  color: #111; padding: 0 0 15px 0;}
+.blogRow p{ font-size: 16px; line-height: 24px; padding: 0 0 30px 0;}
+.blogRow p a{ color: #0967c7;}
+.moreBlog{ display: none; }
+.blogList{ padding: 0 0 20px 40px;}
+.blogList li{ margin:0 0 10px 0; font-size: 16px; background: url(../images/bullet.png) 0 5px no-repeat; padding: 0 0 0 20px;}
+
+
+.listing{ padding: 0 0 30px 0; max-width: 700px; margin:0 auto;}
+.listing li{ font-size: 16px; color: #6b6c79; background: url(../images/border.png) bottom center no-repeat; padding: 18px 0;}
+.listing li span{ display: inline-block; position: relative; transition: transform 0.3s linear; -moz-transition: transform 0.3s linear; -webkit-transition: transform 0.3s linear;}
+.listing li:last-child{ background: none;}
+.listing li:hover span{ transform: scale(1.1,1.1); -moz-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1); }
+
+/***
+Contact Us
+***/
+.contactForm{ max-width: 500px; margin:0 auto; }
+.frmRow{ padding: 0 0 20px 0; text-align: left;}
+.frmRow label{ display: block; font-family: 'ralewaymedium', Arial; font-size: 14px; color: #666666; padding: 0 0 5px 0; }
+.frmRow input[type="text"]{width: 100%; background: #fff; border:1px #ddd solid; padding: 10px; color: #666; font-size: 14px; outline: 0; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.frmRow textarea{width: 100%; background: #fff; outline: 0; border:1px #ddd solid; padding: 10px; color: #666; font-size: 14px; resize:none; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear; height: 100px;}
+.btnSubmit{ display: block; background: #295690; border: 0; outline: 0; color: #fff; font-family: 'ralewaymedium', Arial; cursor: pointer; padding:12px 10px; font-size: 14px; width: 100%; }
+.frmRow input[type="text"]:focus, .frmRow textarea:focus{ box-shadow: 0 0 5px #ddd; }
+
+
+/***
+Footer
+***/
+.footer{ background: #fff; padding: 33px 0;}
+.footerInner{ max-width: 1000px; margin:0 auto; }
+.footerTop{ padding: 0 0 60px 0; text-align: center;}
+.fooNav li{ display: inline-block; font-size: 14px; margin:0 10px;}
+.fooNav li a{ color: #838383; display: block; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.fooNav li a:hover, .fooNav li a.activeNav{ color: #373737;}
+.footerBottom p{ font-size: 14px; color: #838383; line-height: 18px; padding: 0 0 10px 0;}
+.fooLeft{ width: 50%; float: left; }
+.fooRight{ width: 50%; float: left; text-align: right;}
+.social li{ display: inline-block; vertical-align: top; margin:0 0 0 15px;}
+.social li a{ display: block;}
+
+
+/***
+Popup CSS
+***/
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+
